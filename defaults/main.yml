@@ -22,7 +22,7 @@ greenpithumb_backend_sleep_windows: null
 greenpithumb_backend_db_file: "{{ greenpithumb_data_path }}/greenpithumb.db"
 greenpithumb_backend_moisture_threshold: null
 greenpithumb_backend_pump_amount: null
-greenpithumb_backend_camera_rotation: null
+greenpithumb_backend_camera_rotation: 0
 
 #
 # Settings for the GreenPiThumb frontend application server (serving non-static
