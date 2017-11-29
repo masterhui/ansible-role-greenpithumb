@@ -1,10 +1,10 @@
 # Ansible Role: GreenPiThumb
 
-[![Build Status](https://travis-ci.org/JeetShetty/ansible-role-greenpithumb.svg?branch=master)](https://travis-ci.org/JeetShetty/ansible-role-greenpithumb)
-[![Ansible Galaxy](https://img.shields.io/badge/ansible--galaxy-greenpithumb-blue.svg?style=flat-square)](https://galaxy.ansible.com/JeetShetty/greenpithumb)
+[![Build Status](https://travis-ci.org/masterhui/ansible-role-greenpithumb.svg?branch=master)](https://travis-ci.org/JeetShetty/ansible-role-greenpithumb)
+[![Ansible Galaxy](https://img.shields.io/badge/ansible--galaxy-greenpithumb-blue.svg?style=flat-square)](https://galaxy.ansible.com/masterhui/greenpithumb)
 [![License](http://img.shields.io/:license-apache-blue.svg?style=flat-square)](LICENSE)
 
-Ansible role for [GreenPiThumb](https://github.com/JeetShetty/greenpithumb).
+Ansible role for [GreenPiThumb](https://github.com/masterhui/greenpithumb).
 
 ## Role Variables
 
