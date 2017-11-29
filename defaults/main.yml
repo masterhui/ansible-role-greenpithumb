@@ -13,7 +13,7 @@ greenpithumb_adafruit_dht_extra_args: ""
 greenpithumb_backend_user: greenpithumb
 greenpithumb_backend_group: greenpithumb
 greenpithumb_backend_path: "/opt/greenpithumb"
-greenpithumb_backend_git_repo: "https://github.com/JeetShetty/GreenPiThumb"
+greenpithumb_backend_git_repo: "https://github.com/masterhui/GreenPiThumb"
 greenpithumb_backend_git_version: "master"
 # Settings for GreenPiThumb backend command-line flags.
 greenpithumb_backend_poll_interval: null
@@ -32,7 +32,7 @@ greenpithumb_backend_camera_rotation: null
 greenpithumb_frontend_user: greenpithumb-frontend
 greenpithumb_frontend_group: greenpithumb-frontend
 greenpithumb_frontend_path: "/opt/greenpithumb-frontend"
-greenpithumb_frontend_git_repo: "https://github.com/JeetShetty/GreenPiThumb_Frontend"
+greenpithumb_frontend_git_repo: "https://github.com/masterhui/GreenPiThumb_Frontend"
 greenpithumb_frontend_git_version: "master"
 # Port on which greenpithumb-frontend listens for application requests.
 greenpithumb_frontend_app_port: 8888
@@ -41,7 +41,7 @@ greenpithumb_frontend_app_port: 8888
 # Settings for the static portion (HTML/CSS/JS) of the GreenPiThumb Frontend.
 #
 
-greenpithumb_frontend_static_git_repo: "https://github.com/JeetShetty/GreenPiThumb_Frontend_static"
+greenpithumb_frontend_static_git_repo: "https://github.com/masterhui/GreenPiThumb_Frontend_static"
 greenpithumb_frontend_static_git_version: "master"
 # Location of greenpithumb-frontend's static web files.
 greenpithumb_frontend_static_root: /var/www/greenpithumb-frontend
