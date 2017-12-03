@@ -16,8 +16,8 @@ greenpithumb_backend_path: "/opt/greenpithumb"
 greenpithumb_backend_git_repo: "https://github.com/masterhui/GreenPiThumb"
 greenpithumb_backend_git_version: "master"
 # Settings for GreenPiThumb backend command-line flags.
-greenpithumb_backend_poll_interval: null
-greenpithumb_backend_photo_interval: null
+greenpithumb_backend_poll_interval: 0.2
+greenpithumb_backend_photo_interval: 0.5
 greenpithumb_backend_sleep_windows: null
 greenpithumb_backend_db_file: "{{ greenpithumb_data_path }}/greenpithumb.db"
 greenpithumb_backend_moisture_threshold: null
