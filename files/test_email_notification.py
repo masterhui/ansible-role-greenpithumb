@@ -36,10 +36,11 @@ if __name__ == '__main__':
     parser.add_argument(
         '-b',
         '--body',
-        help='Email body', default="")     
+        help='Email body')     
     parser.add_argument(
         '-u',
         '--username',
-        help='The gmail user name for sending the email')                 
+        help='The gmail user name for sending the email',
+        required=True)                 
         
     main(parser.parse_args()) 
