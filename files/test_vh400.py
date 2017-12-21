@@ -11,7 +11,6 @@ MISO = 23
 MOSI = 24
 CS   = 25
 
-
 def calc_vwc(V):
     """Returns the Volumetric Water Content (VWC)
     Most curves can be approximated with linear segments of the form:
@@ -59,10 +58,8 @@ def calc_vwc(V):
         VWC = 62.5 * V - 87.5
     elif(V > 3.0):
         VWC = 62.5 * V - 87.5
-        print('[WARN] vh400 voltage above 3.0 volts: {0:0.1f}v'.format(V))
-        
-    return VWC
-        
+
+    return VWC/2.0   # Divide by two based on measurement with dry and wet soil
 
 def main(args):
     GPIO.setmode(GPIO.BCM)
@@ -74,6 +71,8 @@ def main(args):
     print('Turn device power on (pin={})'.format(args.gpio_pin))
     GPIO.output(args.gpio_pin, GPIO.HIGH)
 
+    # Allow warm-up time
+    time.sleep(1.0)
     try:
         while True:   
             # Take sensor reading
@@ -99,7 +98,6 @@ def main(args):
         print('GPIO cleanup')
         GPIO.cleanup()
 
-
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
         prog='GreenPiThumb Soil Moisture Diagnostic Test',
@@ -115,4 +113,4 @@ if __name__ == '__main__':
         type=int,
         help='ADC channel that the VH400 is plugged in to',
         default=7)
-    main(parser.parse_args()) 
+    main(parser.parse_args())
